@@ -16,7 +16,7 @@ body {
     margin-top: 110px;
     opacity: 0;
 
-    animation: fadeInUp 0.8s ease-out forwards;
+    animation: fadeInUp 0.5s ease-out forwards;
 
 }
 
@@ -28,6 +28,7 @@ body {
     opacity: 0;
 
     animation: fadeInUp 0.5s ease-out forwards;
+    animation-delay: 0.3s;
 
 }
 
@@ -475,7 +476,7 @@ body.no-scroll {
 .title-prewu {
     color: var(--background-color);
     position: absolute;
-    top: 126px;
+    top: 111px;
     left: 67px;
     font-size: 56px;
     transform: translateY(-10px);
