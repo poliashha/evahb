@@ -248,7 +248,11 @@ body {
 }
 
 .wishes {
-    padding: 0 50px;
+    padding: 0 46px;
+}
+
+.restoran {
+    margin-top: -10px;
 }
 
 .form-box {
