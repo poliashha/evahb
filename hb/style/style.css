@@ -14,6 +14,10 @@ body {
 
 .convert {
     margin-top: 110px;
+    opacity: 0;
+
+    animation: fadeInUp 0.8s ease-out forwards;
+
 }
 
 .bottom {
@@ -21,6 +25,10 @@ body {
     position: absolute;
     top: 122px;
     left: 41px;
+    opacity: 0;
+
+    animation: fadeInUp 0.5s ease-out forwards;
+
 }
 
 .flower {
@@ -28,6 +36,10 @@ body {
     top: 0;
     left: 27px;
     z-index: -2;
+    opacity: 0;
+
+    animation: fadeInUp 0.5s ease-out forwards;
+
 }
 
 .write {
@@ -35,6 +47,10 @@ body {
     top: 41px;
     right: 48px;
     z-index: -2;
+    opacity: 0;
+
+    animation: fadeInUp 0.5s ease-out forwards;
+
 }
 
 .flowers {
@@ -42,6 +58,22 @@ body {
     top: 57px;
     right: 16px;
     z-index: 1;
+    opacity: 0;
+
+    animation: fadeInUp 0.5s ease-out forwards;
+
+}
+
+@keyframes fadeInUp {
+    0% {
+        opacity: 0;
+
+    }
+
+    100% {
+        opacity: 1;
+
+    }
 }
 
 .heart {
@@ -50,7 +82,7 @@ body {
     /* Начальная позиция снизу (вне экрана) */
     right: 111px;
     z-index: -1;
-    animation: riseUp 1s ease-out forwards;
+    animation: riseUp 0.8s ease-out forwards;
 }
 
 @keyframes riseUp {
@@ -396,24 +428,25 @@ body {
 }
 
 .footer {
-
+    background-image: url(../img/footer.png);
+    background-size: cover;
+    background-repeat: no-repeat;
     position: relative;
     max-width: 412px;
-    margin: auto;
-    margin-top: 67px;
+    margin: 67px auto 0;
+    height: 40px;
 }
 
 .text-bottom {
-    font-size: 48px;
+    font-size: 35px;
     position: absolute;
-    top: -9px;
-    left: 116px;
-    margin-bottom: -10px;
-    height: 22px;
+    top: -2px;
+    left: 129px;
+
 }
 
 .footer-img {
-    max-width: 412;
+    max-width: 412px;
     width: 100%;
     aspect-ratio: 412/37;
 }
@@ -428,7 +461,7 @@ body.no-scroll {
     top: 0;
     left: 0;
     width: 100%;
-   
+
 
     z-index: 1000;
     display: flex;
@@ -439,27 +472,27 @@ body.no-scroll {
     transition: opacity 1s ease, visibility 1s ease;
 }
 
-.title-prewu{
+.title-prewu {
     color: var(--background-color);
-    position: absolute; 
-    top: 65px;
+    position: absolute;
+    top: 126px;
     left: 67px;
     font-size: 56px;
-     transform: translateY(-10px);
+    transform: translateY(-10px);
     animation: slideInText 1.2s ease-out forwards;
     animation-delay: 0.3s;
-     opacity: 0;
-    
+    opacity: 0;
+
 }
 
 .text-prewu {
     font-size: 16px;
     color: var(--background-color);
-     position: absolute; 
-    top: 438px;
-    left: 106px;
+    position: absolute;
+    top: 486px;
+    left: 110px;
     opacity: 0;
-   
+
     animation: slideInText 1.2s ease-out forwards;
     animation-delay: 0.6s;
 }
@@ -477,7 +510,7 @@ body.no-scroll {
 }
 
 .convert-prewu {
-   
+
     pointer-events: none;
     filter: drop-shadow(0 20px 30px rgba(0, 0, 0, 0.2));
     z-index: -1;
