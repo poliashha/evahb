@@ -83,7 +83,7 @@ body {
     /* Начальная позиция снизу (вне экрана) */
     right: 111px;
     z-index: -1;
-    animation: riseUp 0.8s ease-out forwards;
+    animation: riseUp 1s ease-out forwards;
 }
 
 @keyframes riseUp {
@@ -211,7 +211,7 @@ body {
     content: "дней";
     position: absolute;
     top: 40px;
-    right: 3px;
+    right: -1px;
     font-size: 15px;
     font-family: var(--main-font);
     font-weight: 400;
@@ -221,7 +221,7 @@ body {
     content: "часов";
     position: absolute;
     top: 40px;
-    right: -1px;
+    right: -2px;
     font-size: 15px;
     font-family: var(--main-font);
     font-weight: 400;
@@ -231,7 +231,7 @@ body {
     content: "минут";
     position: absolute;
     top: 40px;
-    right: -6px;
+    right: -7px;
     font-size: 15px;
     font-family: var(--main-font);
     font-weight: 400;
