@@ -338,13 +338,13 @@ body {
 }
 
 .button.touch-pressed {
-    background-color: rgba(168, 164, 164, 0.329);
+    background-color: rgba(231, 154, 154, 0.329);
 
 }
 
 @media (hover: hover) {
     .button:hover {
-        background-color: var(--background-color-light);
+        background-color: rgba(231, 154, 154, 0.329);
         color: var(--hot-pink-color);
     }
 }

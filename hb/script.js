@@ -62,7 +62,7 @@ form.addEventListener("submit", async (e) => {
         console.error(error);
     } finally {
         // Возвращаем кнопку в исходное состояние
-        submitButtontext.textContent = "Подтвердить присутвие";
+        submitButtontext.textContent = "Отправить";
     }
 });
 
