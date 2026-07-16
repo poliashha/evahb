@@ -3,12 +3,7 @@ function startCountdown(targetDate) {
         const now = new Date().getTime();
         const distance = targetDate - now;
 
-        if (distance < 0) {
-            document.getElementById("timer").style.display = "none";
-            document.getElementById("datetime").textContent = "Мне уже 16!";
-            return;
-        }
-
+      
         const days = Math.floor(distance / (1000 * 60 * 60 * 24));
         const hours = Math.floor(
             (distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60),
