@@ -4,11 +4,12 @@ function startCountdown(targetDate) {
         const distance = targetDate - now;
 document.getElementById("timer").style.display = "none";
   
-  // Создаем элемент на лету
-  const message = document.createElement("div");
-  message.textContent = "Мне уже 16!";
-  document.body.appendChild(message); // или вставить в нужное место
+ if (distance < 0) {
+  const timerElement = document.getElementById("timer");
+  timerElement.style.display = "block"; // или "block", если нужно показать
+  timerElement.textContent = "Мы стали семьей!";
   return;
+}
       
         const days = Math.floor(distance / (1000 * 60 * 60 * 24));
         const hours = Math.floor(
