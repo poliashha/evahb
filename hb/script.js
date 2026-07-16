@@ -2,7 +2,13 @@ function startCountdown(targetDate) {
     function updateTimer() {
         const now = new Date().getTime();
         const distance = targetDate - now;
-
+document.getElementById("timer").style.display = "none";
+  
+  // Создаем элемент на лету
+  const message = document.createElement("div");
+  message.textContent = "Мне уже 16!";
+  document.body.appendChild(message); // или вставить в нужное место
+  return;
       
         const days = Math.floor(distance / (1000 * 60 * 60 * 24));
         const hours = Math.floor(
