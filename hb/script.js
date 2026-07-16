@@ -4,10 +4,12 @@ function startCountdown(targetDate) {
         const distance = targetDate - now;
 document.getElementById("timer").style.display = "none";
   
- if (distance < 0) {
+if (distance < 0) {
   const timerElement = document.getElementById("timer");
-  timerElement.style.display = "block"; // или "block", если нужно показать
+  timerElement.style.display = "block";
   timerElement.textContent = "Мне уже 16!";
+  timerElement.style.textAlign = "center";
+  timerElement.style.fontSize = "40px";
   return;
 }
       
