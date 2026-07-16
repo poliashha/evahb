@@ -7,7 +7,7 @@ document.getElementById("timer").style.display = "none";
  if (distance < 0) {
   const timerElement = document.getElementById("timer");
   timerElement.style.display = "block"; // или "block", если нужно показать
-  timerElement.textContent = "Мы стали семьей!";
+  timerElement.textContent = "Мне уже 16!";
   return;
 }
       
